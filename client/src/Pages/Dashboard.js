@@ -23,6 +23,8 @@ import Charts from "../components/Charts";
 import Deposit from "../components/Deposit";
 import AnimalTable from "../components/AnimalTable";
 
+
+
 function Copyright(props) {
   return (
     <Typography

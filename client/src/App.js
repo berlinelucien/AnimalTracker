@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home';
 import Dashboard from './Pages/Dashboard';
+import AnimalDB from './Pages/AnimalDB';
+import Individuals from './Pages/Individuals';
 
 function App() {
   return (
@@ -12,6 +14,12 @@ function App() {
         </Routes>
         <Routes>
           <Route path="dashboard" element={<Dashboard />} />
+        </Routes>
+        <Routes>
+          <Route path="database" element={<AnimalDB />} />
+        </Routes>
+        <Routes>
+          <Route path="scientist" element={<Individuals />} />
         </Routes>
       </BrowserRouter>
     </div>

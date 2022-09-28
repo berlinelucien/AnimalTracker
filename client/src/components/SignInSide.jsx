@@ -11,6 +11,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 //import PokemonHome from '../images/PokemonHome';
 
 function Copyright(props) {
@@ -97,6 +98,7 @@ export default function SignInSide() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
+              <NavLink to="/dashboard" variant="body2">
               <Button
                 type="submit"
                 fullWidth
@@ -104,7 +106,8 @@ export default function SignInSide() {
                 sx={{ mt: 3, mb: 2 }}
               >
                 Sign In
-              </Button>
+                </Button>
+                </NavLink>
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">

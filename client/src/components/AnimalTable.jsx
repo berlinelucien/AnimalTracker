@@ -1,16 +1,10 @@
 import * as React from "react";
-import Link from "@mui/material/Link";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
 import Title from "./Title";
 import { useState, useEffect } from "react";
 
-function preventDefault(event) {
-  event.preventDefault();
-}
+// function preventDefault(data) {
+//   data.preventDefault();
+// }
 
 function AnimalTable() {
   // initialize data == default species
@@ -35,8 +29,37 @@ function AnimalTable() {
 
   return (
     <React.Fragment>
-      <Title>Recent Animal Sighting</Title>
-      <Table size="small">
+      <Title text="Animal Sighting" />
+      <table className="table table-hover border">
+                <thead className="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Common Name:</th>
+                    <th scope="col">Scientific Name:</th>
+                    <th scope="col">Population:</th>
+                    <th scope="col">Conservation Status:</th>
+                    <th scope="col">Add/edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* Display all animals here */}
+                  {species.map((data, index) => {
+                    return (
+                      <tr key={index}>
+                        <th scope="row">{}</th>
+                        <td>{data.common_name}</td>
+                        <td>{data.scientific_name}</td>
+                        <td>{data.population}</td>
+                        <td>{data.conservation_status}</td>
+                        <td>
+
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+      {/* <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Common Name</TableCell>
@@ -57,10 +80,8 @@ function AnimalTable() {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
-      <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-        See more orders
-      </Link>
+      </Table> */}
+     
     </React.Fragment>
   );
 }
