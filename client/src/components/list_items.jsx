@@ -37,7 +37,7 @@ export const mainListItems = (
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
-    <NavLink to="/database">
+    <NavLink to="/joinTable">
       <ListItemText primary="Animal Database" />
       </NavLink>
      
