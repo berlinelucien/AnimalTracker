@@ -5,6 +5,7 @@ import Dashboard from './Pages/Dashboard';
 import AnimalDB from './Pages/AnimalDB';
 import Individuals from './Pages/Individuals';
 import JoinTable from './components/JoinTable';
+import MyReports from './Pages/MyReports';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="joinTable" element={<JoinTable />} />
+        </Routes>
+        <Routes>
+          <Route path="myReports" element={<MyReports />} />
         </Routes>
       </BrowserRouter>
     </div>

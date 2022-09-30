@@ -13,7 +13,8 @@ import indexRouter from './routes/index.mjs';
 import individualsRouter from './routes/individuals.mjs';
 import speciesRouter from './routes/species.mjs';
 import sightingsRouter from './routes/sightings.mjs';
-import joinTableRouter from './routes/joinTable.mjs'
+import joinTableRouter from './routes/joinTable.mjs';
+import reportTableRouter from './routes/reportTable.mjs';
 
 const app = express();
 
@@ -38,6 +39,7 @@ app.use('/individuals', individualsRouter);
 app.use('/species', speciesRouter);
 app.use('/sightings', sightingsRouter)
 app.use('/joinTable', joinTableRouter);
+app.use('/reportTable', reportTableRouter);
 // path for animal science here
 
 app.set('views', path.join(__dirname, 'views'));
