@@ -28,6 +28,7 @@ router.post("/", cors(), async (req, res) => {
     const createdSpecies = await db.one(
       "INSERT INTO species(id, common_name, scientific_name, population, conservation_status) VALUES($1, $2, $3, $4, $5) RETURNING *",
       [
+        species.id,
         species.common_name,
         species.scientific_name,
         species.population,

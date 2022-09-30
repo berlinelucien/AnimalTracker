@@ -56,7 +56,7 @@ function JoinTable() {
                   {full_List.map((data, index) => {
                     return (
                       <tr key={index}>
-                        <th scope="row">{}</th>
+                        <th scope="row">{ }</th>
                         <td>{data.common_name}</td>
                         <td>{data.scientific_name}</td>
                         <td>{data.population}</td>
