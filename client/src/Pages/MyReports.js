@@ -4,7 +4,8 @@ import ReportTable from '../components/ReportTable'
 
 const MyReports = () => {
   return (
-      <div className='container'>
+    <div className='container'>
+    
           <ReportTable />
     </div>
   )

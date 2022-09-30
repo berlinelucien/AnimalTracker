@@ -1,6 +1,7 @@
 import * as React from "react";
 import Title from "./Title";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 
 // tables are joined
@@ -29,8 +30,11 @@ function ReportTable() {
 
   return (
     <React.Fragment>
+      <NavLink to='/dashboard'>
+        <div>back</div>
+      </NavLink> 
       <Title text="My Reports" />
-     
+   
       <table className="table table-hover border">
                 <thead className="thead-dark">
                   <tr>
