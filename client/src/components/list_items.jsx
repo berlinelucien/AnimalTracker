@@ -31,7 +31,9 @@ export const mainListItems = (
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
+      <NavLink to="/myReports">
       <ListItemText primary="My Reports" />
+      </NavLink>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
