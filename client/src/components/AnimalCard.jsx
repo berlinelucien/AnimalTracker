@@ -5,7 +5,7 @@ import animals_avatar from '../images/animals_avatar.jpeg';
 
 
 
-export default function Deposits() {
+export default function AnimalCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
     <CardContent>

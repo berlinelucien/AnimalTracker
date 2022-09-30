@@ -19,10 +19,9 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { mainListItems } from "../components/list_items";
 import { secondaryListItems } from "../components/list_items";
-import Charts from "../components/Charts";
-import Deposit from "../components/Deposit";
+import AnimalCard from "../components/AnimalCard";
 import AnimalTable from "../components/AnimalTable";
-
+import AddSpecies from "../components/MediaCard";
 
 
 function Copyright(props) {
@@ -180,7 +179,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Charts />
+                  <AddSpecies />
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
@@ -193,7 +192,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Deposit />
+                  <AnimalCard />
                 </Paper>
               </Grid>
               {/* Recent Orders */}
